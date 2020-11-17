@@ -26,6 +26,11 @@ output "instance_group" {
   value       = google_compute_region_instance_group_manager.mig.instance_group
 }
 
+output "instances" {
+  description = "instances"
+  value       = google_compute_region_instance_group_manager.mig.instances
+}
+      
 output "instance_group_manager" {
   description = "An instance of google_compute_region_instance_group_manager of the instance group."
   value       = google_compute_region_instance_group_manager.mig
